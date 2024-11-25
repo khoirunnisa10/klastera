@@ -149,9 +149,7 @@ def lihat_akurasi_page():
             st.write("Prediksi salah untuk kelas positif.")
             st.write("**False Negative (FN)**:", cn[1, 0])
             st.write("Prediksi salah untuk kelas negatif.")
-         
-         # Tambahkan kesimpulan akhir
-        # Penjelasan sederhana
+                
         st.markdown("""
         <div style="text-align: justify;">
         Matriks kesalahan membantu memahami bagaimana model melakukan prediksi:
@@ -163,7 +161,6 @@ def lihat_akurasi_page():
         """, unsafe_allow_html=True)
     else:
         st.warning("Hitung model terlebih dahulu di halaman Home.")
-    st.warning("Hitung model terlebih dahulu di halaman Home.")
 
 def lihat_klasifikasi_page():
     if y_pred is not None and y_test is not None:
